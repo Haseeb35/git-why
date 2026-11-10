@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: revert-trusted-domains
+expected_outcome: |
+  Finds that the exact idea was merged and reverted. fbe48fbb 'Add trusted domains' by Jake Treacher, merged via PR #4983 (for issue #2949) in August 2019, was reverted by Nate Prewitt in 09fd857e on 2019-09-19, because it broke Python 2.7 (issue #5175). Notes maintainers' reluctance to add such an option, and suggests overriding rebuild_auth/should_strip_auth in a Session subclass or handling the redirect manually.

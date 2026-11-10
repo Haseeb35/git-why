@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-labelledby="t d">
+  <title id="t">How git-why works</title>
+  <desc id="d">Three steps: 1. You point at confusing code. 2. Claude digs through blame, commits, PRs and reverts. 3. You get the story and a keep-or-delete verdict.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1222"/>
+      <stop offset="1" stop-color="#1b1430"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ffb86b"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="300" rx="24" fill="url(#bg)"/>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <!-- step 1 -->
+    <g transform="translate(60 50)">
+      <rect width="330" height="200" rx="18" fill="#191a2e" stroke="#2c2846"/>
+      <circle cx="44" cy="46" r="22" fill="#ffb86b"/>
+      <text x="44" y="54" font-size="22" font-weight="800" fill="#1b1430" text-anchor="middle">1</text>
+      <text x="80" y="54" font-size="26" font-weight="700" fill="#f4f1ff">You ask</text>
+      <text x="26" y="104" font-size="18" fill="#a9a4c7">Point at any confusing line,</text>
+      <text x="26" y="130" font-size="18" fill="#a9a4c7">function or magic number.</text>
+      <text x="26" y="172" font-size="16" font-style="italic" fill="#ffb86b">“why is this here?”</text>
+    </g>
+    <line x1="402" y1="150" x2="468" y2="150" stroke="#ffb86b" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- step 2 -->
+    <g transform="translate(475 50)">
+      <rect width="330" height="200" rx="18" fill="#191a2e" stroke="#2c2846"/>
+      <circle cx="44" cy="46" r="22" fill="#ff8e7a"/>
+      <text x="44" y="54" font-size="22" font-weight="800" fill="#1b1430" text-anchor="middle">2</text>
+      <text x="80" y="54" font-size="26" font-weight="700" fill="#f4f1ff">Claude digs</text>
+      <text x="26" y="104" font-size="18" fill="#a9a4c7">Reads the git history like a</text>
+      <text x="26" y="130" font-size="18" fill="#a9a4c7">detective: commits, PRs,</text>
+      <text x="26" y="156" font-size="18" fill="#a9a4c7">reverts, tests, changelogs.</text>
+      <text x="26" y="184" font-size="15" fill="#6f6a92">skips formatting &amp; rename noise</text>
+    </g>
+    <line x1="817" y1="150" x2="883" y2="150" stroke="#ffb86b" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- step 3 -->
+    <g transform="translate(890 50)">
+      <rect width="330" height="200" rx="18" fill="#191a2e" stroke="#2c2846"/>
+      <circle cx="44" cy="46" r="22" fill="#ff6b8b"/>
+      <text x="44" y="54" font-size="22" font-weight="800" fill="#1b1430" text-anchor="middle">3</text>
+      <text x="80" y="54" font-size="26" font-weight="700" fill="#f4f1ff">You decide</text>
+      <text x="26" y="104" font-size="18" fill="#a9a4c7">The real story with proof,</text>
+      <text x="26" y="130" font-size="18" fill="#a9a4c7">plus a clear verdict:</text>
+      <g font-size="14" font-weight="700" fill="#ffffff">
+        <rect x="26" y="156" width="84" height="28" rx="14" fill="#2f9e6e"/>
+        <text x="68" y="175" text-anchor="middle">✅ SAFE</text>
+        <rect x="118" y="156" width="92" height="28" rx="14" fill="#c98a1b"/>
+        <text x="164" y="175" text-anchor="middle">⚠️ CAREFUL</text>
+        <rect x="218" y="156" width="88" height="28" rx="14" fill="#d9475f"/>
+        <text x="262" y="175" text-anchor="middle">🛑 KEEP</text>
+      </g>
+    </g>
+  </g>
+</svg>

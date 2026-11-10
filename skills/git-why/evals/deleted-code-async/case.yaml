@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: deleted-code-async
+expected_outcome: |
+  Finds the removal commit 32327f8f (2012-05-10, 'remove requests.async') and the later cleanup a1b6ef3f, explains it was removed from requests (moved out to the separate grequests project), and recommends grequests or a modern alternative such as concurrent.futures or an async HTTP client.

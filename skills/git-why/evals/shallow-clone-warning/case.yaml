@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: shallow-clone-warning
+expected_outcome: |
+  Notices the repository is a shallow clone, tells the user the history is truncated so the origin cannot be seen, avoids presenting a fabricated origin commit as fact, and suggests git fetch --unshallow (it may still offer clearly-labelled inference from the code and comment).

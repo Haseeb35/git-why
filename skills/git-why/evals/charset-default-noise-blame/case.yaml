@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: charset-default-noise-blame
+expected_outcome: |
+  Sees past the 2022 black formatting commit (2a6f290b, #6095) that blame lands on. Finds the origin a0ae2e6c by Johannes Gorset (2012-01-21), whose message cites RFC 2616 section 3.7.1, notes the later application/json to utf-8 special case (5855dd71, RFC 4627), and advises against changing the library default, suggesting setting r.encoding or using r.apparent_encoding instead.

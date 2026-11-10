@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: magic-number-chunk-size
+expected_outcome: |
+  Identifies commit 297aa04b (Cory Benfield, 2013) that lowered it from 10*1024 to 512, links it to PR #1122 and issue #989, explains the reason is iter_lines responsiveness (lines arrive promptly instead of waiting for a 10KB buffer), and advises that raising it trades latency for throughput; callers can pass chunk_size per call.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: strip-auth-full-history
+expected_outcome: |
+  Identifies origin 857e9b7a (Bruce Merry, 2018) merged via PR #4718 for issue #4716, relates it to CVE-2018-18074 (stripping only on https to http downgrade), explains the backward-compatibility reason, cites test_should_strip_auth_https_upgrade, and rates removal as a breaking behaviour change.
